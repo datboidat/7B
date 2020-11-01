@@ -1,0 +1,88 @@
+/**
+   This program demonstrates how a reference to an
+   array can be returned from a method.
+*/
+
+public class ReturnArray
+{
+   public static void main(String[] args)
+   {
+      double[] values;
+      int[] intArray;
+      char[] charArray;
+      String[] stringArray;
+      
+      values = getArray();
+      for (double num : values)
+         System.out.print(num + "  ");
+ 
+      intArray = getIntArray();
+      for (int num : intArray)
+         System.out.print(num + "  ");
+     
+      charArray = getUCharArray();
+      for (char num : charArray)
+    	 System.out.print(num + "  ");
+      
+      charArray = getLCharArray();
+      for (char num : charArray)
+    	 System.out.print(num + "  ");
+      
+      stringArray = getStringArray();
+      for (String num : stringArray)
+    	  System.out.print(num + "  ");
+   }
+
+   /**
+      getArray method
+      @return A reference to an array of doubles.
+   */
+
+   public static double[] getArray()
+   {
+      double[] array = { 1.2, 2.3, 4.5, 6.7, 8.9 };
+
+      return array;
+   }
+   
+   public static int[] getIntArray()
+   {
+	   System.out.println();
+	   
+	   int[] array = {0, 1, 2, 3 , 4, 5, 6, 7, 8, 9};
+	  
+	   return array;
+   }
+   
+   public static char[] getUCharArray()
+   {
+	   System.out.println();
+
+	   char[] array = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
+	   
+	   return array; 
+   }
+  
+   public static char[] getLCharArray()
+   {
+	   System.out.println();
+
+	   char[] array = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+	   
+	   return array;   
+   }
+
+   public static String[] getStringArray()
+   {
+	   System.out.println();
+	   
+	   String[] array = {"AAA", "aaa", "BBB", "bbb", "CCC", "ccc"};
+	   
+	   return array;
+   }
+
+
+
+
+
+}
